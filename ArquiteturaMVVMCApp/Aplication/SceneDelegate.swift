@@ -16,8 +16,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = .init(windowScene: windowScene)
-        window?.rootViewController = ViewController()
+        
+        let navigationController = UINavigationController()
+        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.navigationBar.backgroundColor = .systemMint
+        
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+        
+        let coordinator = LoginCoordinator(navigationController: navigationController)
+        coordinator.start()
         
         
     }
