@@ -15,6 +15,7 @@
 		F3F53F782B5571A000DC1822 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F772B5571A000DC1822 /* Coordinator.swift */; };
 		F3F53F7A2B55740B00DC1822 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F792B55740B00DC1822 /* LoginCoordinator.swift */; };
 		F3F53F7D2B5575C000DC1822 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F7C2B5575C000DC1822 /* LoginViewController.swift */; };
+		F3F53F7F2B557C6900DC1822 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F7E2B557C6900DC1822 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F3F53F772B5571A000DC1822 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F3F53F792B55740B00DC1822 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		F3F53F7C2B5575C000DC1822 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F3F53F7E2B557C6900DC1822 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F53F7C2B5575C000DC1822 /* LoginViewController.swift */,
+				F3F53F7E2B557C6900DC1822 /* LoginView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				F3F53F782B5571A000DC1822 /* Coordinator.swift in Sources */,
 				F3F53F652B556CFA00DC1822 /* ViewController.swift in Sources */,
 				F3F53F7A2B55740B00DC1822 /* LoginCoordinator.swift in Sources */,
+				F3F53F7F2B557C6900DC1822 /* LoginView.swift in Sources */,
 				F3F53F612B556CFA00DC1822 /* AppDelegate.swift in Sources */,
 				F3F53F632B556CFA00DC1822 /* SceneDelegate.swift in Sources */,
 			);
