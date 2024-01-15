@@ -16,6 +16,8 @@
 		F3F53F7A2B55740B00DC1822 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F792B55740B00DC1822 /* LoginCoordinator.swift */; };
 		F3F53F7D2B5575C000DC1822 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F7C2B5575C000DC1822 /* LoginViewController.swift */; };
 		F3F53F7F2B557C6900DC1822 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F7E2B557C6900DC1822 /* LoginView.swift */; };
+		F3F53F822B557F6100DC1822 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F812B557F6100DC1822 /* ViewCode.swift */; };
+		F3F53F852B55812B00DC1822 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F842B55812B00DC1822 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		F3F53F792B55740B00DC1822 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		F3F53F7C2B5575C000DC1822 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F3F53F7E2B557C6900DC1822 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F3F53F812B557F6100DC1822 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		F3F53F842B55812B00DC1822 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +66,11 @@
 		F3F53F5F2B556CFA00DC1822 /* ArquiteturaMVVMCApp */ = {
 			isa = PBXGroup;
 			children = (
+				F3F53F832B55811500DC1822 /* Extensions */,
 				F3F53F7B2B5575B700DC1822 /* Login */,
 				F3F53F642B556CFA00DC1822 /* ViewController.swift */,
 				F3F53F762B55718D00DC1822 /* Coordinator */,
+				F3F53F802B557F3700DC1822 /* Helpers */,
 				F3F53F742B556E0D00DC1822 /* Aplication */,
 				F3F53F752B556E1800DC1822 /* Assets */,
 				F3F53F6E2B556CFC00DC1822 /* Info.plist */,
@@ -106,6 +112,22 @@
 				F3F53F7E2B557C6900DC1822 /* LoginView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		F3F53F802B557F3700DC1822 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F3F53F812B557F6100DC1822 /* ViewCode.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F3F53F832B55811500DC1822 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3F53F842B55812B00DC1822 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +203,11 @@
 				F3F53F7D2B5575C000DC1822 /* LoginViewController.swift in Sources */,
 				F3F53F782B5571A000DC1822 /* Coordinator.swift in Sources */,
 				F3F53F652B556CFA00DC1822 /* ViewController.swift in Sources */,
+				F3F53F852B55812B00DC1822 /* UIView+Extensions.swift in Sources */,
 				F3F53F7A2B55740B00DC1822 /* LoginCoordinator.swift in Sources */,
 				F3F53F7F2B557C6900DC1822 /* LoginView.swift in Sources */,
 				F3F53F612B556CFA00DC1822 /* AppDelegate.swift in Sources */,
+				F3F53F822B557F6100DC1822 /* ViewCode.swift in Sources */,
 				F3F53F632B556CFA00DC1822 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
