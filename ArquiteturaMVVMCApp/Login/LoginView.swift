@@ -2,6 +2,10 @@ import UIKit
 
 final class LoginView: UIView, ViewCode {
     
+    //MARK: - Closures
+    var onRegisterTap: (() -> Void)?
+    var onEnterTap: ((_ email: String, _ passwdord: String) -> Void)?
+    
     //MARK: - Properts
     private lazy var emailLabel: UILabel = {
         let label = UILabel()
@@ -53,6 +57,7 @@ final class LoginView: UIView, ViewCode {
         button.setTitle("Entrar", for: .normal)
         button.backgroundColor = .blue.withAlphaComponent(0.4)
         button.enableViewCode()
+        button.addTarget(self, action: #selector(enterButtonTap), for: .touchUpInside)
         return button
     }()
     
@@ -61,6 +66,7 @@ final class LoginView: UIView, ViewCode {
         button.setTitle("Registrar", for: .normal)
         button.backgroundColor = .blue.withAlphaComponent(0.4)
         button.enableViewCode()
+        button.addTarget(self, action: #selector(registerButtonTap), for: .touchUpInside)
         return button
     }()
     
@@ -71,6 +77,19 @@ final class LoginView: UIView, ViewCode {
     }
     @available(*,unavailable)
     required init?(coder: NSCoder) { nil }
+    
+    //MARK: - Actions
+    @objc func enterButtonTap() {
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            self.onEnterTap?(email, password)
+        } else {
+            
+        }
+    }
+    
+    @objc func registerButtonTap() {
+        self.onRegisterTap?()
+    }
     
     //MARK: - Helpers
     func setupHierarchy() {
