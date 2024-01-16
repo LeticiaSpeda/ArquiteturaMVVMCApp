@@ -5,6 +5,15 @@ final class LoginCoordinator: Coordinator {
     
     func start() {
         let controller = LoginViewController()
+        controller.onRegisterTap = {
+            let coordinator = RegisterCoordinator(navigationController: self.navigationController)
+            coordinator.start()
+        }
+        controller.onLoginSuccess = {
+            let coordinator = HomeCoordinator(navigationController: self.navigationController)
+            coordinator.start()
+        }
+        
         navigationController.pushViewController(controller, animated: true)
     }
     
