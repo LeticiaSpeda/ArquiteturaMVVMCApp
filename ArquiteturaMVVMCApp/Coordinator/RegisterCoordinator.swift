@@ -1,8 +1,14 @@
-//
-//  RegisterCoordinator.swift
-//  ArquiteturaMVVMCApp
-//
-//  Created by Leticia Speda on 16/01/24.
-//
+import UIKit
 
-import Foundation
+final class RegisterCoordinator: Coordinator {
+    var navigationController: UINavigationController
+    
+    func start() {
+        let controller = RegisterViewController()
+        navigationController.pushViewController(controller, animated: true)
+    }
+    
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+    }
+}
