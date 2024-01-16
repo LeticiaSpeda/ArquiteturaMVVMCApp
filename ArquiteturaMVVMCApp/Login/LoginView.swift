@@ -30,7 +30,7 @@ final class LoginView: UIView, ViewCode {
         label.text = "Senha"
         label.textColor = .black
         label.font = .boldSystemFont(ofSize: 14)
-        label.translatesAutoresizingMaskIntoConstraints = false
+        label.enableViewCode()
         return label
     }()
     
@@ -44,8 +44,24 @@ final class LoginView: UIView, ViewCode {
         textField.font = .systemFont(ofSize: 12, weight: .semibold)
         textField.layer.cornerRadius = 10
         textField.isSecureTextEntry = true
-        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.enableViewCode()
         return textField
+    }()
+    
+    private lazy var enterButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Entrar", for: .normal)
+        button.backgroundColor = .blue.withAlphaComponent(0.4)
+        button.enableViewCode()
+        return button
+    }()
+    
+    private lazy var registerButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Registrar", for: .normal)
+        button.backgroundColor = .blue.withAlphaComponent(0.4)
+        button.enableViewCode()
+        return button
     }()
     
     //MARK: - Initializers
@@ -62,6 +78,8 @@ final class LoginView: UIView, ViewCode {
         addSubview(emailTextField)
         addSubview(passwordLabel)
         addSubview(passwordTextField)
+        addSubview(enterButton)
+        addSubview(registerButton)
     }
     
     func setupConstraints() {
@@ -69,7 +87,9 @@ final class LoginView: UIView, ViewCode {
             setupEmailLabelConstraints() +
             setupEmailTextFieldConstraints() +
             setupPasswordLabelConstraints() +
-            setupPasswordTextFieldConstraints()
+            setupPasswordTextFieldConstraints() +
+            setupEnterButtonConstraints() +
+            setupRegisterButtonConstraints()
         )
     }
     
@@ -139,6 +159,37 @@ final class LoginView: UIView, ViewCode {
                 constant: -12),
             
             passwordTextField.heightAnchor.constraint(equalToConstant: 30)
+        ]
+    }
+    
+    private func setupEnterButtonConstraints() -> [NSLayoutConstraint] {
+        [
+            enterButton.topAnchor.constraint(
+                equalTo: passwordTextField.bottomAnchor,
+                constant: 40
+            ),
+            enterButton.leadingAnchor.constraint(
+                equalTo: safeAreaLayoutGuide.leadingAnchor,
+                constant: 10
+            ),
+            enterButton.trailingAnchor.constraint(
+                equalTo: safeAreaLayoutGuide.trailingAnchor,
+                constant: -10
+            )
+        ]
+    }
+    
+    private func setupRegisterButtonConstraints() -> [NSLayoutConstraint] {
+        [
+            registerButton.topAnchor.constraint(equalTo: enterButton.bottomAnchor, constant: 10),
+            registerButton.leadingAnchor.constraint(
+                equalTo: safeAreaLayoutGuide.leadingAnchor,
+                constant: 10
+            ),
+            registerButton.trailingAnchor.constraint(
+                equalTo: safeAreaLayoutGuide.trailingAnchor,
+                constant: -10
+            )
         ]
     }
     
