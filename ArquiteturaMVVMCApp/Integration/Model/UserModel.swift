@@ -1,8 +1,6 @@
-//
-//  UserModel.swift
-//  ArquiteturaMVVMCApp
-//
-//  Created by Leticia Speda on 16/01/24.
-//
-
 import Foundation
+
+struct UserModel: Codable {
+    var email: String = String()
+    var password: String = String()
+}
