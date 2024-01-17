@@ -13,7 +13,8 @@ extension ViewCode {
         setupActions()
         setupStyle()
     }
-    
+    func setupHierarchy() {}
+    func setupConstraints() {}
     func setupActions() {}
     func setupStyle() {}
 }
