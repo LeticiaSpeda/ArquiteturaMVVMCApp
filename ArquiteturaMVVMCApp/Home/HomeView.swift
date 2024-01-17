@@ -1,6 +1,8 @@
 import UIKit
 
 final class HomeView: UIView, ViewCode {
+    
+    //MARK: - Properts
     private lazy var helloLabel: UILabel = {
         let label = UILabel()
         label.text = "Hello"
@@ -10,6 +12,7 @@ final class HomeView: UIView, ViewCode {
         return label
     }()
     
+    //MARK: - override
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -18,7 +21,7 @@ final class HomeView: UIView, ViewCode {
     @available(*, unavailable)
     required init?(coder: NSCoder) { nil }
     
-    
+    //MARK: - Helpers
     func setupHierarchy() {
         addSubview(helloLabel)
     }

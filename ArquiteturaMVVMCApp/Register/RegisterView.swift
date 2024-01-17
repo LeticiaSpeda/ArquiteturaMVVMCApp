@@ -18,7 +18,10 @@ final class RegisterView: UIView, ViewCode {
     
     private lazy var emailTextField: UITextField = {
         let textField = UITextField()
-        textField.attributedPlaceholder = NSAttributedString(string: "informe seu email de registro", attributes: [NSAttributedString.Key.foregroundColor : UIColor.black.withAlphaComponent(0.6)])
+        textField.attributedPlaceholder = NSAttributedString(
+            string: "informe seu email de registro",
+            attributes: [NSAttributedString.Key.foregroundColor : UIColor.black.withAlphaComponent(0.6)]
+        )
         textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 62))
         textField.leftViewMode = .always
         textField.textColor = .black
@@ -40,7 +43,10 @@ final class RegisterView: UIView, ViewCode {
     
     private lazy var passwordTextField: UITextField = {
         let textField = UITextField()
-        textField.attributedPlaceholder = NSAttributedString(string: "informe sua senha de registro", attributes: [NSAttributedString.Key.foregroundColor : UIColor.black.withAlphaComponent(0.6)])
+        textField.attributedPlaceholder = NSAttributedString(
+            string: "informe sua senha de registro",
+            attributes: [NSAttributedString.Key.foregroundColor : UIColor.black.withAlphaComponent(0.6)]
+        )
         textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 16, height: 62))
         textField.leftViewMode = .always
         textField.textColor = .black
@@ -87,8 +93,6 @@ final class RegisterView: UIView, ViewCode {
     @objc func registerButtonTap() {
         if let email = emailTextField.text, let password = passwordTextField.text {
             self.onRegisterTap?(email, password)
-        } else {
-            
         }
     }
     
@@ -201,7 +205,10 @@ final class RegisterView: UIView, ViewCode {
     
     private func setupRegisterButtonConstraints() -> [NSLayoutConstraint] {
         [
-            registerButton.topAnchor.constraint(equalTo: enterButton.bottomAnchor, constant: 10),
+            registerButton.topAnchor.constraint(
+                equalTo: enterButton.bottomAnchor,
+                constant: 10
+            ),
             registerButton.leadingAnchor.constraint(
                 equalTo: safeAreaLayoutGuide.leadingAnchor,
                 constant: 10

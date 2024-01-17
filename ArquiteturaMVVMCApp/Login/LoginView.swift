@@ -75,6 +75,7 @@ final class LoginView: UIView, ViewCode {
         super.init(frame: frame)
         commonInit()
     }
+    
     @available(*,unavailable)
     required init?(coder: NSCoder) { nil }
     
@@ -198,7 +199,10 @@ final class LoginView: UIView, ViewCode {
     
     private func setupRegisterButtonConstraints() -> [NSLayoutConstraint] {
         [
-            registerButton.topAnchor.constraint(equalTo: enterButton.bottomAnchor, constant: 10),
+            registerButton.topAnchor.constraint(
+                equalTo: enterButton.bottomAnchor,
+                constant: 10
+            ),
             registerButton.leadingAnchor.constraint(
                 equalTo: safeAreaLayoutGuide.leadingAnchor,
                 constant: 10
@@ -213,5 +217,4 @@ final class LoginView: UIView, ViewCode {
     func setupStyle() {
         backgroundColor = .systemMint
     }
-    
 }

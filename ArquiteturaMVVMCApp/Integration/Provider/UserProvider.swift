@@ -2,7 +2,7 @@ import Foundation
 import FirebaseAuth
 
 protocol UserProviderProtocol {
-    func login(parameters: [AnyHashable: Any],  completionHadler: @escaping(Result<UserModel, Error>) -> Void)
+    func login(parameters: [AnyHashable: Any], completionHadler: @escaping(Result<UserModel, Error>) -> Void)
     
     func register(parameters: [AnyHashable: Any], completionHadler: @escaping(Result<UserModel, Error>) -> Void)
 }

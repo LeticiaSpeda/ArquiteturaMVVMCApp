@@ -49,5 +49,4 @@ final class RegisterViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         present(alert, animated: true)
     }
-    
 }
