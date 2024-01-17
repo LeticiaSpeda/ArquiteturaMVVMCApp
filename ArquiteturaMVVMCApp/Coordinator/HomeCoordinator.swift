@@ -4,8 +4,9 @@ final class HomeCoordinator: Coordinator {
     var navigationController: UINavigationController
     
     func start() {
-        let controller = RegisterViewController()
-        navigationController.pushViewController(controller, animated: true)
+        let controller = HomeViewController()
+        controller.modalPresentationStyle = .overFullScreen
+        navigationController.present(controller, animated: true)
     }
     
     init(navigationController: UINavigationController) {
