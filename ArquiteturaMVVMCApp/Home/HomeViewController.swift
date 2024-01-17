@@ -1,8 +1,8 @@
-//
-//  HomeViewController.swift
-//  ArquiteturaMVVMCApp
-//
-//  Created by Leticia Speda on 17/01/24.
-//
+import UIKit
 
-import Foundation
+final class HomeViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .yellow
+    }
+}
