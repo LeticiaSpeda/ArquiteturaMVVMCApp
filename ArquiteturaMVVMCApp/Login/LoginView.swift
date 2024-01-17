@@ -82,9 +82,7 @@ final class LoginView: UIView, ViewCode {
     @objc func enterButtonTap() {
         if let email = emailTextField.text, let password = passwordTextField.text {
             self.onEnterTap?(email, password)
-        } else {
-            
-        }
+        } 
     }
     
     @objc func registerButtonTap() {
