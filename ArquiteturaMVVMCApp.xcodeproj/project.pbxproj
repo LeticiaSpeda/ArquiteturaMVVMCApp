@@ -48,6 +48,8 @@
 		F35EA3B82B56CCD700BD8B3C /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F35EA3B72B56CCD700BD8B3C /* FirebaseStorageCombine-Community */; };
 		F35EA3BB2B56CD4100BD8B3C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EA3BA2B56CD4100BD8B3C /* Constants.swift */; };
 		F35EA3BE2B56D62D00BD8B3C /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35EA3BD2B56D62D00BD8B3C /* HomeCoordinator.swift */; };
+		F3E7A71C2B57F37A00CC81FC /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7A71B2B57F37A00CC81FC /* UserViewModel.swift */; };
+		F3E7A71F2B57F7B000CC81FC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7A71E2B57F7B000CC81FC /* HomeViewController.swift */; };
 		F3F53F612B556CFA00DC1822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F602B556CFA00DC1822 /* AppDelegate.swift */; };
 		F3F53F632B556CFA00DC1822 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F622B556CFA00DC1822 /* SceneDelegate.swift */; };
 		F3F53F652B556CFA00DC1822 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F642B556CFA00DC1822 /* ViewController.swift */; };
@@ -71,6 +73,8 @@
 		F35EA3762B56CADA00BD8B3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F35EA3BA2B56CD4100BD8B3C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F35EA3BD2B56D62D00BD8B3C /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		F3E7A71B2B57F37A00CC81FC /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		F3E7A71E2B57F7B000CC81FC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F3F53F5D2B556CFA00DC1822 /* ArquiteturaMVVMCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArquiteturaMVVMCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F53F602B556CFA00DC1822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3F53F622B556CFA00DC1822 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +201,23 @@
 			path = Infraestructure;
 			sourceTree = "<group>";
 		};
+		F3E7A71A2B57F36200CC81FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F3F53F642B556CFA00DC1822 /* ViewController.swift */,
+				F3E7A71B2B57F37A00CC81FC /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F3E7A71D2B57F79C00CC81FC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F3E7A71E2B57F7B000CC81FC /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		F3F53F542B556CFA00DC1822 = {
 			isa = PBXGroup;
 			children = (
@@ -216,12 +237,13 @@
 		F3F53F5F2B556CFA00DC1822 /* ArquiteturaMVVMCApp */ = {
 			isa = PBXGroup;
 			children = (
-				F35EA3B92B56CD2900BD8B3C /* Infraestructure */,
-				F35EA3692B56C98400BD8B3C /* Integration */,
-				F3F53F642B556CFA00DC1822 /* ViewController.swift */,
 				F3F53F7B2B5575B700DC1822 /* Login */,
 				F35EA3672B56C8E700BD8B3C /* Register */,
+				F3E7A71D2B57F79C00CC81FC /* Home */,
 				F3F53F762B55718D00DC1822 /* Coordinator */,
+				F3E7A71A2B57F36200CC81FC /* ViewModel */,
+				F35EA3B92B56CD2900BD8B3C /* Infraestructure */,
+				F35EA3692B56C98400BD8B3C /* Integration */,
 				F35EA3682B56C93D00BD8B3C /* Utilities */,
 				F3F53F742B556E0D00DC1822 /* Aplication */,
 				F3F53F752B556E1800DC1822 /* Assets */,
@@ -395,11 +417,13 @@
 			files = (
 				F3F53F7D2B5575C000DC1822 /* LoginViewController.swift in Sources */,
 				F35EA3662B56BF5800BD8B3C /* RegisterViewController.swift in Sources */,
+				F3E7A71F2B57F7B000CC81FC /* HomeViewController.swift in Sources */,
 				F3F53F782B5571A000DC1822 /* Coordinator.swift in Sources */,
 				F35EA3BE2B56D62D00BD8B3C /* HomeCoordinator.swift in Sources */,
 				F3F53F652B556CFA00DC1822 /* ViewController.swift in Sources */,
 				F35EA3752B56CA2D00BD8B3C /* UserProvider.swift in Sources */,
 				F3F53F852B55812B00DC1822 /* UIView+Extensions.swift in Sources */,
+				F3E7A71C2B57F37A00CC81FC /* UserViewModel.swift in Sources */,
 				F35EA36F2B56C9EC00BD8B3C /* UserBusiness.swift in Sources */,
 				F35EA3BB2B56CD4100BD8B3C /* Constants.swift in Sources */,
 				F3F53F7A2B55740B00DC1822 /* LoginCoordinator.swift in Sources */,
