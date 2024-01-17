@@ -45,11 +45,6 @@ final class LoginViewController: UIViewController, ViewCode {
         present(alert, animated: true)
     }
     
-    func setupHierarchy() {
-    }
-    
-    func setupConstraints() { }
-    
     func setupStyle() {
         self.title = "Login"
         view.backgroundColor = .systemMint
