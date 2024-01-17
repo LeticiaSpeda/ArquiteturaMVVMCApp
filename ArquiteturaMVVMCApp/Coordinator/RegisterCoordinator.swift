@@ -5,6 +5,16 @@ final class RegisterCoordinator: Coordinator {
     
     func start() {
         let controller = RegisterViewController()
+        
+        controller.onOpenTap = {
+            self.navigationController.popToRootViewController(animated: true)
+        }
+        
+        controller.onRegisterSuccess = {
+            let coordinator = HomeCoordinator(navigationController: self.navigationController)
+            coordinator.start()
+        }
+        
         navigationController.pushViewController(controller, animated: true)
     }
     
