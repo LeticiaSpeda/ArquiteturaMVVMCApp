@@ -51,6 +51,7 @@
 		F3E7A71C2B57F37A00CC81FC /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7A71B2B57F37A00CC81FC /* UserViewModel.swift */; };
 		F3E7A71F2B57F7B000CC81FC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7A71E2B57F7B000CC81FC /* HomeViewController.swift */; };
 		F3E7A7212B57FAFF00CC81FC /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7A7202B57FAFF00CC81FC /* RegisterView.swift */; };
+		F3E7A7232B58058F00CC81FC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E7A7222B58058F00CC81FC /* HomeView.swift */; };
 		F3F53F612B556CFA00DC1822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F602B556CFA00DC1822 /* AppDelegate.swift */; };
 		F3F53F632B556CFA00DC1822 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F622B556CFA00DC1822 /* SceneDelegate.swift */; };
 		F3F53F652B556CFA00DC1822 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F53F642B556CFA00DC1822 /* ViewController.swift */; };
@@ -77,6 +78,7 @@
 		F3E7A71B2B57F37A00CC81FC /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		F3E7A71E2B57F7B000CC81FC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F3E7A7202B57FAFF00CC81FC /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		F3E7A7222B58058F00CC81FC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F3F53F5D2B556CFA00DC1822 /* ArquiteturaMVVMCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArquiteturaMVVMCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F53F602B556CFA00DC1822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3F53F622B556CFA00DC1822 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				F3E7A71E2B57F7B000CC81FC /* HomeViewController.swift */,
+				F3E7A7222B58058F00CC81FC /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				F3F53F7A2B55740B00DC1822 /* LoginCoordinator.swift in Sources */,
 				F35EA36B2B56C9B000BD8B3C /* UserManager.swift in Sources */,
 				F35EA3722B56CA0900BD8B3C /* UserModel.swift in Sources */,
+				F3E7A7232B58058F00CC81FC /* HomeView.swift in Sources */,
 				F3F53F7F2B557C6900DC1822 /* LoginView.swift in Sources */,
 				F3F53F612B556CFA00DC1822 /* AppDelegate.swift in Sources */,
 				F3F53F822B557F6100DC1822 /* ViewCode.swift in Sources */,
